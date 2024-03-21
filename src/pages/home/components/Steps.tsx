@@ -26,8 +26,8 @@ const Steps = () => {
           Create a budget in three easy steps.
         </p>
       </div>
-      <div className="grid gap-8 lg:grid-cols-2 sm:mx-auto">
-        <div className="grid grid-cols-2 gap-5">
+      <div className="grid gap-2 lg:grid-cols-2 sm:mx-auto">
+        <div className="grid grid-cols-2">
           <img
             className="object-cover w-full h-full col-span-2 rounded shadow-lg"
             src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
@@ -42,10 +42,10 @@ const Steps = () => {
             >
               <div className="mr-4">
                 <div className="flex items-center justify-center">
-                  <img src={step.image} alt="" />
+                  <img className="w-24" src={step.image} alt="" />
                 </div>
               </div>
-              <div>
+              <div className="max-w-sm">
                 <h6 className=" font-medium leading-5 text-white">
                   {step.description}
                 </h6>

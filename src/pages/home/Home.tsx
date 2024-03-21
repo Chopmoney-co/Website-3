@@ -1,5 +1,4 @@
 import { Bg, Bg1, Bg2, Bg3 } from "../../assets";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Steps from "./components/Steps";
 
@@ -22,7 +21,6 @@ const Home = () => {
       </div>
 
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-        <Header />
         <Hero />
         <Steps />
       </div>

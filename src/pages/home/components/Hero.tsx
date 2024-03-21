@@ -1,9 +1,18 @@
 import React from "react";
-import { DownloadButton } from "../../../assets";
+import { DownloadButton, LogoIcon } from "../../../assets";
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] flex flex-col items-center justify-center content-center">
+    <div className=" flex flex-col items-center justify-center lg:justify-normal content-center my-20">
+      <div>
+        <a href="/">
+          <img
+            className="mx-auto w-[100px] lg:w-[166px] mb-14 lg:mb-36"
+            src={LogoIcon}
+            alt=""
+          />
+        </a>
+      </div>
       <div className="max-w-4xl text-center mx-auto ">
         <h1 className="leading-normal font-medium text-white text-4xl md:text-5xl lg:text-6xl">
           Stick to your budget with Chopmoney budgeting.
@@ -17,7 +26,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mt-8 flex justify-center">
+      <div className="mt-8 mb-14 lg:mb-36 flex justify-center">
         <img className="w-48 md:w-56 lg:w-full" src={DownloadButton} alt="" />
       </div>
     </div>
