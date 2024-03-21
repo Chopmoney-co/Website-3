@@ -5,3 +5,5 @@
 * {
   font-family: "Satoshi", sans-serif;
 }
+
+@import "../node_modules/video-react/dist/video-react.css";

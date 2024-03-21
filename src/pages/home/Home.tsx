@@ -1,6 +1,7 @@
 import { Bg, Bg1, Bg2, Bg3 } from "../../assets";
 import Hero from "./components/Hero";
 import Steps from "./components/Steps";
+import Video from "./components/Video";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <Hero />
         <Steps />
+        <Video />
       </div>
     </div>
   );
