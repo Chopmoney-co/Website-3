@@ -7,3 +7,12 @@
 }
 
 @import "../node_modules/video-react/dist/video-react.css";
+
+.video-react .video-react-poster {
+  background-color: #2C2C2C;
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}

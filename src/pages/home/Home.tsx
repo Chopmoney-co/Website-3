@@ -1,4 +1,6 @@
 import { Bg, Bg1, Bg2, Bg3 } from "../../assets";
+import Banner from "./components/Banner";
+import Faqs from "./components/Faqs";
 import Hero from "./components/Hero";
 import Steps from "./components/Steps";
 import Video from "./components/Video";
@@ -13,10 +15,10 @@ const Home = () => {
         <div className="animate-bounce absolute top-[250px] left-[150px] hidden lg:block">
           <img src={Bg3} alt="" />
         </div>
-        <div className="animate-bounce absolute top-[650px] right-[450px] hidden lg:block">
+        <div className="animate-bounce absolute top-[700px] right-[450px] hidden lg:block">
           <img src={Bg1} alt="" />
         </div>
-        <div className="animate-bounce absolute top-[650px] left-[450px] hidden lg:block">
+        <div className="animate-bounce absolute top-[700px] left-[450px] hidden lg:block">
           <img src={Bg2} alt="" />
         </div>
       </div>
@@ -25,6 +27,8 @@ const Home = () => {
         <Hero />
         <Steps />
         <Video />
+        <Banner />
+        <Faqs />
       </div>
     </div>
   );

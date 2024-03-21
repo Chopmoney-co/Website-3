@@ -1,13 +1,12 @@
 import React from "react";
 import { Player, BigPlayButton, ControlBar, PlayToggle } from "video-react";
+import { ChopmoneyVideo, PlayIcon, VideoBg } from "../../../assets";
 
 const Video = () => {
   return (
-    <Player
-      className="my-16"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    >
+    <Player className="my-16 rounded-xl" poster={VideoBg} src={ChopmoneyVideo}>
       <BigPlayButton position="center" />
+
       <ControlBar autoHide={false} disableDefaultControls={true}>
         <PlayToggle />
       </ControlBar>

@@ -8,3 +8,12 @@ export { default as Bg3 } from "./icons/ic_group-3.svg";
 export { default as Bullet1 } from "./icons/ic_bulletOneA.svg";
 export { default as Bullet2 } from "./icons/ic_bulletTwoB.svg";
 export { default as Bullet3 } from "./icons/ic_bulletThreeC.svg";
+export { default as PlayIcon } from "./icons/ic_play.svg";
+
+// images
+export { default as PhoneImage } from "./images/img_phone.svg";
+export { default as VideoBg } from "./images/img_videobg.svg";
+export { default as Bannerimg } from "./images/img_banner.svg";
+
+// video
+export { default as ChopmoneyVideo } from "./videos/How To Chopmoney Landscape.mp4";

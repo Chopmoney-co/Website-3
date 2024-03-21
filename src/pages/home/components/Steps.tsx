@@ -1,22 +1,24 @@
 import React from "react";
-import { Bullet1, Bullet2, Bullet3 } from "../../../assets";
+import { Bullet1, Bullet2, Bullet3, PhoneImage } from "../../../assets";
 
 const Steps = () => {
   const steps = [
     {
       image: Bullet1,
+      title: "First, get the app, obviously.",
       description:
         "Download and sign up on Chopmoney with your mobile money number.",
     },
     {
       image: Bullet2,
+      title: "Tap create a budget.",
       description:
-        "Tap create a budget, enter how much you want to spend daily over a 5 - 30 day period",
+        "Enter how much you want to spend daily over a 5 - 30 day period",
     },
     {
       image: Bullet3,
-      description:
-        "Tap top up to successfully create your budget by topping up the total from your mobile money wallet.",
+      title: "Top up from mobile money (any network)",
+      description: `Tap "top up" to successfully create your budget by topping up the total from your mobile money wallet.`,
     },
   ];
   return (
@@ -27,10 +29,10 @@ const Steps = () => {
         </p>
       </div>
       <div className="grid gap-2 lg:grid-cols-2 sm:mx-auto">
-        <div className="grid grid-cols-2">
+        <div className="bg-[#2C2C2C] rounded-xl mt-auto pt-10">
           <img
-            className="object-cover w-full h-full col-span-2 rounded shadow-lg"
-            src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            className="w-80 pt-5 mx-auto  shadow-lg"
+            src={PhoneImage}
             alt=""
           />
         </div>
@@ -38,17 +40,16 @@ const Steps = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="flex p-4 items-center rounded-xl m-2 bg-[#2d2d2d]"
+              className="flex p-8 items-center rounded-xl m-2 bg-[#2d2d2d]"
             >
               <div className="mr-4">
                 <div className="flex items-center justify-center">
-                  <img className="w-24" src={step.image} alt="" />
+                  <img className="w-16" src={step.image} alt="" />
                 </div>
               </div>
               <div className="max-w-sm">
-                <h6 className=" font-medium leading-5 text-white">
-                  {step.description}
-                </h6>
+                <h5 className=" font-bold  text-[#FDFE0C]">{step.title}</h5>
+                <p className="font-medium  text-white">{step.description}</p>
               </div>
             </div>
           ))}
