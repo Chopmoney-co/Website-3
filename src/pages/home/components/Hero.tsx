@@ -14,7 +14,7 @@ const Hero = () => {
         </a>
       </div>
       <div className="max-w-4xl text-center mx-auto ">
-        <h1 className="leading-normal font-medium text-white text-4xl md:text-5xl lg:text-6xl">
+        <h1 className=" font-medium text-white text-4xl md:text-5xl lg:text-6xl">
           Stick to your budget with Chopmoney budgeting.
         </h1>
       </div>
@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
 
       <div className="mt-8 mb-14 lg:mb-36 flex justify-center">
-        <img className="w-48 md:w-56 lg:w-full" src={DownloadButton} alt="" />
+        <img className="w-56 md:w-64 lg:w-full" src={DownloadButton} alt="" />
       </div>
     </div>
   );
