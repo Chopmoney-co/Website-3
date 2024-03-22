@@ -7,7 +7,10 @@ const Video = () => {
     <Player className="my-16 rounded-xl" poster={VideoBg} src={ChopmoneyVideo}>
       <BigPlayButton position="center" />
 
-      <ControlBar autoHide={false} disableDefaultControls={true}>
+      <ControlBar
+        autoHide={false}
+        // disableDefaultControls={true}
+      >
         <PlayToggle />
       </ControlBar>
     </Player>

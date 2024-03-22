@@ -5,11 +5,11 @@ const Banner = () => {
   return (
     <div>
       <div className="px-4 mx-auto rounded-xl bg-[#FF55C4] sm:px-6 lg:px-8 ">
-        <div className="2xl:pl-24 py-8 lg:py-0">
+        <div className=" py-8 lg:py-0">
           <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
-            <div className="text-center md:py-10  md:text-left">
+            <div className="lg:max-w-sm text-center md:py-10  md:text-left">
               <blockquote>
-                <p className="text-3xl lg:text-5xl font-medium text-gray-900">
+                <p className="text-3xl  font-medium text-gray-900">
                   Create a budget in three easy steps.
                 </p>
               </blockquote>

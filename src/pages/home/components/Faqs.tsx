@@ -12,43 +12,43 @@ const Faqs = () => {
       question: "How do I get started with Chopmoney?",
       answer:
         "Simply download the Chopmoney app from Google Play or the App Store, sign up using your mobile money number, and follow the prompts to set up your account.",
-      open: true,
+      open: false,
     },
     {
       question: "Can I link Chopmoney to my bank account?",
       answer:
         "Chopmoney is available for all mobile money networks. Unfortunately, we do not support banks.",
-      open: true,
+      open: false,
     },
     {
       question: "Is Chopmoney free to use?",
       answer:
         "Yes, Chopmoney is free to download and use. However, there may be charges associated with mobile money transactions, depending on your mobile network provider.",
-      open: true,
+      open: false,
     },
     {
       question: "How do I create a budget with Chopmoney?",
       answer:
         "To create a budget, enter your daily spending limit, specify the duration of your budget, and top up the total amount from your mobile money wallet.",
-      open: true,
+      open: false,
     },
     {
       question: "Can I adjust my budget after I've created it?",
       answer:
         "No, you cannot adjust a budget once it's been created. However, you have the option to create multiple budgets with different parameters to suit your needs. If you need to make changes, you can create a new budget with the updated settings.",
-      open: true,
+      open: false,
     },
     {
       question: "How do I know when my budget is ready to cash out?",
       answer:
         "Chopmoney will send you notifications when your budget is ready to cash out, based on your specified duration and spending limits.",
-      open: true,
+      open: false,
     },
     {
       question: "Is my financial information secure with Chopmoney?",
       answer:
         "Yes, Chopmoney takes security seriously and uses encryption and other measures to protect your financial data.",
-      open: true,
+      open: false,
     },
   ]);
 
@@ -86,7 +86,7 @@ const Faqs = () => {
                 className="flex items-center justify-between w-full px-4 "
                 onClick={() => toggleFaq(index)}
               >
-                <span className="flex text-md font-bold text-[#FDF70C]">
+                <span className="flex text-left text-md font-bold text-[#FDF70C]">
                   {" "}
                   {item.question}{" "}
                 </span>

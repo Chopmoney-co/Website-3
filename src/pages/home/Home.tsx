@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="relative overflow-hidden bg-[#1F1F1F]">
       <div className="relative">
-        <div className="animate-bounce absolute top-[250px] right-[150px] hidden lg:block">
+        <div className="animate-bounce absolute top-[250px] right-[150px] hidden lg:block" >
           <img src={Bg} alt="" />
         </div>
         <div className="animate-bounce absolute top-[250px] left-[150px] hidden lg:block">

@@ -31,7 +31,7 @@ const Steps = () => {
       <div className="grid gap-2 lg:grid-cols-2 sm:mx-auto">
         <div className="bg-[#2C2C2C] rounded-xl mt-auto pt-10">
           <img
-            className="w-80 pt-5 mx-auto  shadow-lg"
+            className="w-[19.2rem] pt-5 my-auto mx-auto  shadow-lg"
             src={PhoneImage}
             alt=""
           />

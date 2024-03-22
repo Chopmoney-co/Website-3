@@ -1,12 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
+import Footer from "./shared/Footer";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 };
 
