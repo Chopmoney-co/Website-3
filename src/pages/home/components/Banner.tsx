@@ -14,7 +14,7 @@ const Banner = () => {
                 </p>
               </blockquote>
               <a
-                href="#_"
+                href="https://onelink.to/gx8jhf"
                 className="inline-flex mt-8  items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-black bg-[#FDF70C] border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
               >
                 Download for Android & iOS

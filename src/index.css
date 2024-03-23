@@ -8,6 +8,14 @@
 
 @import "../node_modules/video-react/dist/video-react.css";
 
+.video-react-video {
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+
 .video-react .video-react-poster {
   background-color: #0f0f11;
   border-radius: 0.75rem;
@@ -29,7 +37,6 @@
   -o-border-radius: 2rem;
 }
 
-.video-react .video-react-control:before,
 .video-react .video-react-big-play-button:before {
   top: 9px;
 }

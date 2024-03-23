@@ -27,7 +27,15 @@ const Hero = () => {
       </div>
 
       <div className="mt-8 mb-14 lg:mb-36 flex justify-center">
-        <img className="w-56 md:w-64 lg:w-full" src={DownloadButton} alt="" />
+        <a
+          href="https://onelink.to/gx8jhf"
+          className=" px-6 py-3 md:px-10 md:py-5 relative text-xl rounded-full group overflow-hidden font-medium bg-transparent text-white inline-block border-[1px]  border-white hover:border-black"
+        >
+          <span className="absolute bottom-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#ECEC0B] group-hover:h-full opacity-90"></span>
+          <span className="relative group-hover:text-black">
+            Download for Android & iOS
+          </span>
+        </a>
       </div>
     </div>
   );
