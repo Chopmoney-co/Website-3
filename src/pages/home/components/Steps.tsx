@@ -29,8 +29,12 @@ const Steps = () => {
         </p>
       </div>
       <div className="grid gap-2 lg:grid-cols-2 my-auto sm:mx-auto">
-        <div className="bg-[#2C2C2C] m-2 rounded-xl mt-auto ">
-          <img className="my-auto  mx-auto pt-10 w-[20.5rem]  shadow-lg" src={PhoneImage} alt="" />
+        <div className="bg-[#2C2C2C] m-2 lg:mr-0 rounded-xl mt-auto ">
+          <img
+            className="my-auto  mx-auto pt-10 w-[20.5rem]  shadow-lg"
+            src={PhoneImage}
+            alt=""
+          />
         </div>
         <div className="flex flex-col justify-center">
           {steps.map((step, index) => (
