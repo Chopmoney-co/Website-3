@@ -4,7 +4,12 @@ import { Bannerimg } from "../../../assets";
 const Banner = () => {
   return (
     <div>
-      <div className="px-4 mx-auto rounded-xl bg-[#FF55C4] sm:px-6 lg:px-8 ">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="1000"
+        data-aos-duration="1000"
+        className="px-4 mx-auto rounded-xl bg-[#FF55C4] sm:px-6 lg:px-8 "
+      >
         <div className=" py-8 lg:py-0">
           <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
             <div className="lg:max-w-sm text-center md:py-10  md:text-left">
@@ -22,7 +27,14 @@ const Banner = () => {
             </div>
 
             <div className="relative my-auto">
-              <img className="my-auto" src={Bannerimg} alt="" />
+              <img
+                data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
+                className="my-auto"
+                src={Bannerimg}
+                alt=""
+              />
             </div>
           </div>
         </div>

@@ -70,12 +70,22 @@ const Faqs = () => {
     <section className="py-10 sm:py-16  lg:py-24">
       <div className="mx-auto ">
         <div className=" mx-auto ">
-          <h2 className="text-2xl font-medium  text-white">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="1000"
+            className="text-2xl font-medium  text-white"
+          >
             We get asked these a lot!
           </h2>
         </div>
 
-        <div className="bg-[#2c2c2c] px-2 lg:px-6 mx-auto mt-5 rounded-xl">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="1500"
+          data-aos-duration="1500"
+          className="bg-[#2c2c2c] px-2 lg:px-6 mx-auto mt-5 rounded-xl"
+        >
           {faq.map((item, index) => (
             <div
               key={index}
@@ -113,9 +123,7 @@ const Faqs = () => {
                 </svg>
               </button>
 
-              <div
-                className={`${item.open ? "block" : "hidden"} text-white `}
-              >
+              <div className={`${item.open ? "block" : "hidden"} text-white `}>
                 <p dangerouslySetInnerHTML={{ __html: item.answer }}></p>
               </div>
             </div>

@@ -104,9 +104,9 @@ const Footer = () => {
             <p className="mt-4 text-lg text-white">Get the app</p>
             <div className="pt-4">
               <a href="https://apps.apple.com/us/app/chopmoney/id6444722445">
-                <img src={AppStore} alt="" />
+                <img className="mb-2"  src={AppStore} alt="" />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=co.chopmoney.app&pli=1">
+              <a className="my-2" href="https://play.google.com/store/apps/details?id=co.chopmoney.app&pli=1">
                 <img src={PlayStore} alt="" />
               </a>
             </div>

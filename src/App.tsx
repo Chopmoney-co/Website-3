@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Footer from "./shared/Footer";
@@ -7,8 +7,13 @@ import TermsofUse from "./pages/TermsofUse";
 import ContactUs from "./pages/ContactUs";
 import GoogleTagManager from "./GoogleTag";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import AOS from "aos";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <HelmetProvider>
       <GoogleTagManager />

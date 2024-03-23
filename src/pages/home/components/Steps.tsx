@@ -24,21 +24,38 @@ const Steps = () => {
   return (
     <div>
       <div className="md:mx-auto mt-12 mb-6">
-        <p className="text-white md:text-2xl">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="500"
+          className="text-white md:text-2xl"
+        >
           Create a budget in three easy steps.
         </p>
       </div>
       <div className="grid gap-2 lg:grid-cols-2 my-auto sm:mx-auto">
-        <div className="bg-[#2C2C2C] hover:bg-[#373737] m-2 lg:mr-0 rounded-xl mt-auto ">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          className="bg-[#2C2C2C] h-[440px] hover:bg-[#373737] m-2 lg:mr-0 rounded-xl mt-auto relative overflow-hidden"
+        >
           <img
-            className="my-auto  mx-auto pt-10 w-[20.5rem]  shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="1500"
+            className="absolute bottom-0 left-0 right-0 mx-auto mb-[-30px] hover:mb-[0] w-[23rem] transition-all duration-200 ease-out transform"
             src={PhoneImage}
             alt=""
           />
         </div>
+
         <div className="flex flex-col justify-center">
           {steps.map((step, index) => (
             <div
+            data-aos="fade-up"
+            data-aos-delay={(index + 1) * 700} // Adjust delay for each step
+            data-aos-duration="1000"
               key={index}
               className="flex p-8 items-center rounded-xl m-2 bg-[#2d2d2d] hover:bg-[#373737]"
             >

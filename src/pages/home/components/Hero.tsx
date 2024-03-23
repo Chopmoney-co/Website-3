@@ -1,5 +1,5 @@
 import React from "react";
-import { DownloadButton, LogoIcon } from "../../../assets";
+import { LogoIcon } from "../../../assets";
 
 const Hero = () => {
   return (
@@ -14,13 +14,23 @@ const Hero = () => {
         </a>
       </div>
       <div className="max-w-4xl text-center mx-auto ">
-        <h1 className=" font-medium text-white text-4xl md:text-5xl lg:text-6xl">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="500"
+          className=" font-medium text-white text-4xl md:text-5xl lg:text-6xl"
+        >
           Stick to your budget with Chopmoney budgeting.
         </h1>
       </div>
 
       <div className="mt-5 max-w-2xl text-center mx-auto">
-        <p className="text-[16px] lg:text-[20px] text-white">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          className="text-[16px] lg:text-[20px] text-white"
+        >
           The only budgeting app designed exclusively for Ghanaians, powered by{" "}
           <span className="text-[#ECEC0B]"> mobile money technology.</span>
         </p>
@@ -28,6 +38,9 @@ const Hero = () => {
 
       <div className="mt-8 mb-14 lg:mb-36 flex justify-center">
         <a
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="1500"
           href="https://onelink.to/gx8jhf"
           className=" px-6 py-3 md:px-10 md:py-5 relative text-xl rounded-full group overflow-hidden font-medium bg-transparent text-white inline-block border-[1px]  border-white hover:border-black"
         >

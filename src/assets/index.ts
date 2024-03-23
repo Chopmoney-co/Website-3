@@ -13,7 +13,7 @@ export { default as PlayStore } from "./icons/ic_playstore.svg";
 export { default as AppStore } from "./icons/ic_appstore.svg";
 
 // images
-export { default as PhoneImage } from "./images/img_phone.svg";
+export { default as PhoneImage } from "./images/img_phone.png";
 export { default as VideoBg } from "./images/img_videobg.png";
 export { default as Bannerimg } from "./images/img_banner.svg";
 
