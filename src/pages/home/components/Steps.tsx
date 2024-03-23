@@ -11,7 +11,7 @@ const Steps = () => {
     },
     {
       image: Bullet2,
-      title: "Tap create a budget.",
+      title: "Tap ‘Create a budget’",
       description:
         "Enter how much you want to spend daily over a 5 - 30 day period",
     },
@@ -29,7 +29,7 @@ const Steps = () => {
         </p>
       </div>
       <div className="grid gap-2 lg:grid-cols-2 my-auto sm:mx-auto">
-        <div className="bg-[#2C2C2C] m-2 lg:mr-0 rounded-xl mt-auto ">
+        <div className="bg-[#2C2C2C] hover:bg-[#373737] m-2 lg:mr-0 rounded-xl mt-auto ">
           <img
             className="my-auto  mx-auto pt-10 w-[20.5rem]  shadow-lg"
             src={PhoneImage}
@@ -40,7 +40,7 @@ const Steps = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="flex p-8 items-center rounded-xl m-2 bg-[#2d2d2d]"
+              className="flex p-8 items-center rounded-xl m-2 bg-[#2d2d2d] hover:bg-[#373737]"
             >
               <div className="mr-4">
                 <div className="flex items-center justify-center">

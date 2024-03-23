@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 import { Bg, Bg1, Bg2, Bg3 } from "../../assets";
 import Banner from "./components/Banner";
 import Faqs from "./components/Faqs";
@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     const bounceAnimation = (ref, delay) => {
       setTimeout(() => {
-        ref.current.classList.add('animate-bounce');
+        ref.current.classList.add("animate-bounce");
       }, delay);
     };
 
@@ -29,16 +29,28 @@ const Home = () => {
   return (
     <div className="relative overflow-hidden bg-[#1F1F1F]">
       <div className="relative">
-        <div ref={bgRef1} className="absolute top-[250px] right-[150px] hidden lg:block" >
+        <div
+          ref={bgRef1}
+          className="absolute top-[250px] right-[150px] hidden lg:block"
+        >
           <img src={Bg} alt="" />
         </div>
-        <div ref={bgRef2} className="absolute top-[250px] left-[150px] hidden lg:block">
+        <div
+          ref={bgRef2}
+          className="absolute top-[250px] left-[150px] hidden lg:block"
+        >
           <img src={Bg3} alt="" />
         </div>
-        <div ref={bgRef3} className="absolute top-[700px] right-[450px] hidden lg:block">
+        <div
+          ref={bgRef3}
+          className="absolute top-[700px] right-[450px] hidden lg:block"
+        >
           <img src={Bg1} alt="" />
         </div>
-        <div ref={bgRef4} className="absolute top-[700px] left-[450px] hidden lg:block">
+        <div
+          ref={bgRef4}
+          className="absolute top-[700px] left-[450px] hidden lg:block"
+        >
           <img src={Bg2} alt="" />
         </div>
       </div>

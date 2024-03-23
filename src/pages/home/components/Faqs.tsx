@@ -75,17 +75,19 @@ const Faqs = () => {
           </h2>
         </div>
 
-        <div className="bg-[#2c2c2c] px-2 mx-auto mt-5 rounded-xl">
+        <div className="bg-[#2c2c2c] px-2 lg:px-6 mx-auto mt-5 rounded-xl">
           {faq.map((item, index) => (
             <div
               key={index}
               className={`transition-all duration-200 pt-6 pb-8 ${
-                index === faq.length - 1 ? "" : "border-[#515151] border-b-[1px]"
+                index === faq.length - 1
+                  ? ""
+                  : "border-[#515151] border-b-[1px]"
               } cursor-pointer `}
             >
               <button
                 type="button"
-                className="flex items-center justify-between w-full px-4 "
+                className="flex items-center justify-between w-full "
                 onClick={() => toggleFaq(index)}
               >
                 <span className="flex text-left text-md font-bold text-[#FDF70C]">
@@ -112,7 +114,7 @@ const Faqs = () => {
               </button>
 
               <div
-                className={`${item.open ? "block" : "hidden"} px-4 text-white `}
+                className={`${item.open ? "block" : "hidden"} text-white `}
               >
                 <p dangerouslySetInnerHTML={{ __html: item.answer }}></p>
               </div>
