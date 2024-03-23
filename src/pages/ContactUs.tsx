@@ -39,7 +39,7 @@ const ContactUs = () => {
             </a>
 
             <a
-              className=" mt-2 bg-black w-48 rounded-xl mx-auto p-4 text-base font-normal text-center text-[#ECEC08]"
+              className=" mt-2 bg-[#2c2c2c] w-48 rounded-full mx-auto p-4 text-base font-normal text-center text-[#ECEC08]"
               href="https://wa.me/message/NRDZZQVYGWMCL1"
             >
               Whatsapp Chat

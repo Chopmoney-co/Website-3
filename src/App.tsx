@@ -8,6 +8,7 @@ import ContactUs from "./pages/ContactUs";
 import GoogleTagManager from "./GoogleTag";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import AOS from "aos";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/term-of-use" element={<TermsofUse />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <Footer />
     </HelmetProvider>

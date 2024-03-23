@@ -84,7 +84,7 @@ const Faqs = () => {
           data-aos="fade-up"
           data-aos-delay="1500"
           data-aos-duration="1500"
-          className="bg-[#2c2c2c] px-2 lg:px-6 mx-auto mt-5 rounded-xl"
+          className="bg-[#2c2c2c] px-4 lg:px-6 mx-auto mt-5 rounded-xl"
         >
           {faq.map((item, index) => (
             <div

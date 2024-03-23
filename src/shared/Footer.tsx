@@ -33,9 +33,9 @@ const Footer = () => {
             <div className="flex flex-row sm:gap-y-0 gap-x-4">
               <a
                 className="font-normal text-white hover:text-[#ECEC0B]"
-                href="#"
+                href="/about-us"
               >
-                About
+                About Us
               </a>
               <Link
                 className="font-normal text-white hover:text-[#ECEC0B]"
@@ -53,7 +53,7 @@ const Footer = () => {
                 className="font-normal text-white hover:text-[#ECEC0B]"
                 to="/contact-us"
               >
-               Contact Us
+                Contact Us
               </Link>
             </div>
             <p className="mt-4  text-white">
@@ -104,9 +104,12 @@ const Footer = () => {
             <p className="mt-4 text-lg text-white">Get the app</p>
             <div className="pt-4">
               <a href="https://apps.apple.com/us/app/chopmoney/id6444722445">
-                <img className="mb-2"  src={AppStore} alt="" />
+                <img className="mb-2" src={AppStore} alt="" />
               </a>
-              <a className="my-2" href="https://play.google.com/store/apps/details?id=co.chopmoney.app&pli=1">
+              <a
+                className="my-2"
+                href="https://play.google.com/store/apps/details?id=co.chopmoney.app&pli=1"
+              >
                 <img src={PlayStore} alt="" />
               </a>
             </div>

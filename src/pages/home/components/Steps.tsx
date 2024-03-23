@@ -5,7 +5,7 @@ const Steps = () => {
   const steps = [
     {
       image: Bullet1,
-      title: "First, get the app, obviously.",
+      title: "First, get the app, obviously 🙄.",
       description:
         "Download and sign up on Chopmoney with your mobile money number.",
     },
@@ -28,7 +28,7 @@ const Steps = () => {
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="500"
-          className="text-white md:text-2xl"
+          className="text-white text-center lg:text-left text-2xl"
         >
           Create a budget in three easy steps.
         </p>
@@ -41,10 +41,7 @@ const Steps = () => {
           className="bg-[#2C2C2C] h-[440px] hover:bg-[#373737] m-2 lg:mr-0 rounded-xl mt-auto relative overflow-hidden"
         >
           <img
-            data-aos="fade-up"
-            data-aos-delay="1000"
-            data-aos-duration="1500"
-            className="absolute bottom-0 left-0 right-0 mx-auto mb-[-30px] hover:mb-[0] w-[23rem] transition-all duration-200 ease-out transform"
+            className="absolute bottom-0 left-0 right-0 mx-auto translate-y-10 w-[23rem] transition duration-500 ease-in-out hover:translate-y-0 hover:transition hover:duration-500  hover:ease-in-out"
             src={PhoneImage}
             alt=""
           />
@@ -53,9 +50,9 @@ const Steps = () => {
         <div className="flex flex-col justify-center">
           {steps.map((step, index) => (
             <div
-            data-aos="fade-up"
-            data-aos-delay={(index + 1) * 700} // Adjust delay for each step
-            data-aos-duration="1000"
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
+              data-aos-duration="500"
               key={index}
               className="flex p-8 items-center rounded-xl m-2 bg-[#2d2d2d] hover:bg-[#373737]"
             >
