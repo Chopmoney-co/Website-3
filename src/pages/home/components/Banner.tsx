@@ -10,7 +10,7 @@ const Banner = () => {
             <div className="lg:max-w-sm text-center md:py-10  md:text-left">
               <blockquote>
                 <p className="text-3xl  font-medium text-gray-900">
-                  Create a budget in three easy steps.
+                  Ready to take over your world of finance?
                 </p>
               </blockquote>
               <a

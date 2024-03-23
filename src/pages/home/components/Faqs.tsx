@@ -75,11 +75,13 @@ const Faqs = () => {
           </h2>
         </div>
 
-        <div className="bg-[#2c2c2c] mx-auto mt-5 rounded-xl">
+        <div className="bg-[#2c2c2c] px-2 mx-auto mt-5 rounded-xl">
           {faq.map((item, index) => (
             <div
               key={index}
-              className="transition-all duration-200 pt-6 pb-8 border-[#515151] border-b-2 cursor-pointer "
+              className={`transition-all duration-200 pt-6 pb-8 ${
+                index === faq.length - 1 ? "" : "border-[#515151] border-b-[1px]"
+              } cursor-pointer `}
             >
               <button
                 type="button"
@@ -92,7 +94,7 @@ const Faqs = () => {
                 </span>
 
                 <svg
-                  className={`w-6 h-6 text-gray-400 ${
+                  className={`w-6 h-6 text-[#515151] ${
                     item.open ? "rotate-180" : ""
                   }`}
                   xmlns="http://www.w3.org/2000/svg"
