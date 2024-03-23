@@ -3,7 +3,7 @@ import { LogoIcon } from "../assets";
 
 function TermsofUse() {
   return (
-    <div className="bg-[#2c2c2c]">
+    <div className="bg-[#1F1F1F]">
       <section className="w-full px-4 py-24 mx-auto max-w-4xl">
         <a href="/">
           <img className="mb-16" src={LogoIcon} alt="" />
