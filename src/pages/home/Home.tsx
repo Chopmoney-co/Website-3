@@ -5,6 +5,7 @@ import Faqs from "./components/Faqs";
 import Hero from "./components/Hero";
 import Steps from "./components/Steps";
 import Video from "./components/Video";
+import Carousel from "./components/Carousel";
 
 const Home = () => {
   const bgRef1 = useRef(null);
@@ -58,6 +59,7 @@ const Home = () => {
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <Hero />
         <Steps />
+        <Carousel />
         <Video />
         <Banner />
         <Faqs />

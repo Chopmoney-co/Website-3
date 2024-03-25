@@ -1,6 +1,6 @@
 import React from "react";
 import { Player, BigPlayButton, ControlBar, PlayToggle } from "video-react";
-import { ChopmoneyVideo, PlayIcon, VideoBg } from "../../../assets";
+import { ChopmoneyVideo, VideoBg } from "../../../assets";
 
 const Video = () => {
   return (

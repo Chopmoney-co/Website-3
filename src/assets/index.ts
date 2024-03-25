@@ -16,6 +16,16 @@ export { default as AppStore } from "./icons/ic_appstore.svg";
 export { default as PhoneImage } from "./images/img_phone.png";
 export { default as VideoBg } from "./images/img_videobg.png";
 export { default as Bannerimg } from "./images/img_banner.svg";
+export { default as Cards } from "./images/Cards.svg";
+export { default as Cards1 } from "./images/Cards-1.svg";
+export { default as Cards2 } from "./images/Cards-2.svg";
+export { default as Cards3 } from "./images/Cards-3.svg";
+export { default as Cards4 } from "./images/Cards-4.svg";
+export { default as Cards5 } from "./images/Cards-5.svg";
+export { default as Cards6 } from "./images/Cards-6.svg";
+export { default as Cards7 } from "./images/Cards-7.svg";
+export { default as Cards8 } from "./images/Cards-8.svg";
+export { default as Cards9 } from "./images/Cards-9.svg";
 
 // video
 export { default as ChopmoneyVideo } from "./videos/ChopmoneyVideo.mp4";
