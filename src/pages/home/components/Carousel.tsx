@@ -1,8 +1,8 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
+import "swiper/css/autoplay";
 import {
   Cards,
   Cards1,
@@ -14,11 +14,13 @@ import {
   Cards7,
   Cards8,
   Cards9,
+  TransparentImg,
+  TransparentImg2,
 } from "../../../assets";
 
 const Carousel = () => {
   return (
-    <div className="my-20 ">
+    <div className="my-20">
       <div className="md:mx-auto mt-12 mb-6">
         <p
           data-aos="fade-up"
@@ -29,11 +31,24 @@ const Carousel = () => {
           Budget in <span className="text-[#FDF70C] italic">styyyle!</span>
         </p>
       </div>
+      <div className="relative">
+        <div className="absolute top-[0px] right-[970px] hidden lg:block z-50">
+          <img className="h-[200px]" src={TransparentImg} alt="" />
+        </div>
+        <div className="absolute top-[0px] left-[970px] hidden lg:block z-50">
+          <img className="h-[200px]" src={TransparentImg2} alt="" />
+        </div>
+      </div>
       <div className="mx-auto ">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Autoplay]}
           spaceBetween={10}
           slidesPerView={5}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             0: {
               spaceBetween: 10,

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Faqs = () => {
   const [faq, setFaq] = useState([
     {
-      question: "What is a Chopmoney?",
+      question: "What is Chopmoney?",
       answer:
         "Chopmoney is a budgeting app that helps you to stick to your budget by allowing you to set daily spend limits on your expenses.",
       open: true,
@@ -74,7 +74,7 @@ const Faqs = () => {
             data-aos="fade-up"
             data-aos-delay="1000"
             data-aos-duration="1000"
-            className="text-2xl font-medium  text-white"
+            className="text-2xl text-center lg:text-left font-medium  text-white"
           >
             We get asked these a lot!
           </h2>
