@@ -41,3 +41,7 @@
 .video-react .video-react-big-play-button:before {
   top: 9px;
 }
+
+.swiper-slide {
+  width: unset !important;
+}

@@ -6,7 +6,7 @@ const Banner = () => {
     <div>
       <div
         data-aos="fade-up"
-        data-aos-delay="1000"
+        data-aos-delay="500"
         data-aos-duration="1000"
         className="px-4 mx-auto rounded-xl bg-[#FF55C4] sm:px-6 lg:px-8 "
       >
@@ -29,7 +29,7 @@ const Banner = () => {
             <div className="relative my-auto">
               <img
                 data-aos="fade-up"
-                data-aos-delay="1000"
+                data-aos-delay="500"
                 data-aos-duration="1000"
                 className="my-auto"
                 src={Bannerimg}

@@ -18,7 +18,7 @@ import {
 
 const Carousel = () => {
   return (
-    <div className="my-20">
+    <div className="my-20 ">
       <div className="md:mx-auto mt-12 mb-6">
         <p
           data-aos="fade-up"
@@ -29,11 +29,37 @@ const Carousel = () => {
           Budget in <span className="text-[#FDF70C] italic">styyyle!</span>
         </p>
       </div>
-      <div>
+      <div className="mx-auto ">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={10}
           slidesPerView={5}
+          breakpoints={{
+            0: {
+              spaceBetween: 10,
+              slidesPerView: 1,
+            },
+            375: {
+              spaceBetween: 10,
+              slidesPerView: 1,
+            },
+            575: {
+              spaceBetween: 10,
+              slidesPerView: 1,
+            },
+            767: {
+              spaceBetween: 10,
+              slidesPerView: 2,
+            },
+            1024: {
+              spaceBetween: 10,
+              slidesPerView: 4,
+            },
+            1300: {
+              spaceBetween: 10,
+              slidesPerView: 5,
+            },
+          }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
