@@ -42,6 +42,12 @@
   top: 9px;
 }
 
-.swiper-slide {
+
+.slick-prev, .slick-next{
+  display: none !important;
+}
+
+.slick-slide{
   width: unset !important;
+  padding: 10px;
 }
