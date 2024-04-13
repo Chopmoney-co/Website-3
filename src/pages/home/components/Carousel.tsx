@@ -1,8 +1,7 @@
 import React from "react";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/autoplay";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   Cards,
   Cards1,
@@ -19,6 +18,36 @@ import {
 } from "../../../assets";
 
 const Carousel = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="my-20">
       <div className="md:mx-auto mt-12 mb-6">
@@ -39,76 +68,39 @@ const Carousel = () => {
           <img className="h-[200px]" src={TransparentImg2} alt="" />
         </div>
       </div>
-      <div className="mx-auto ">
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={10}
-          slidesPerView={5}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            0: {
-              spaceBetween: 10,
-              slidesPerView: 1,
-            },
-            375: {
-              spaceBetween: 10,
-              slidesPerView: 1,
-            },
-            575: {
-              spaceBetween: 10,
-              slidesPerView: 1,
-            },
-            767: {
-              spaceBetween: 10,
-              slidesPerView: 2,
-            },
-            1024: {
-              spaceBetween: 10,
-              slidesPerView: 4,
-            },
-            1300: {
-              spaceBetween: 10,
-              slidesPerView: 5,
-            },
-          }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide>
+      <div className="mx-auto slider-container">
+        <Slider {...settings}>
+          <div>
             <img src={Cards} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards1} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards2} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards3} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards4} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards5} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards6} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards7} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards8} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <img src={Cards9} alt="" />
-          </SwiperSlide>
-        </Swiper>
+          </div>
+        </Slider>
       </div>
     </div>
   );
