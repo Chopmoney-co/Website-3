@@ -11,6 +11,7 @@ export { default as Bullet3 } from "./icons/ic_bulletThreeC.svg";
 export { default as PlayIcon } from "./icons/ic_play.svg";
 export { default as PlayStore } from "./icons/ic_playstore.svg";
 export { default as AppStore } from "./icons/ic_appstore.svg";
+export { default as VerifiedGif } from "./icons/verified.json";
 
 // images
 export { default as PhoneImage } from "./images/img_phone.png";
