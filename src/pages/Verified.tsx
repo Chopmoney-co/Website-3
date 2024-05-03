@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "./home/components/Carousel";
-import { LogoIcon } from "../assets";
+import { Player } from "@lottiefiles/react-lottie-player";
+import { LogoIcon, VerifiedGif } from "../assets";
 
 const Verified = () => {
   return (
@@ -11,11 +12,19 @@ const Verified = () => {
             <div>
               <a href="/">
                 <img
-                  className="mx-auto w-[100px] lg:w-[166px] mb-14 lg:mb-36"
+                  className="mx-auto w-[100px] lg:w-[166px] mb-16 "
                   src={LogoIcon}
                   alt=""
                 />
               </a>
+            </div>
+            <div className="mb-16">
+              <Player
+                src={VerifiedGif}
+                className="player  w-32"
+                loop
+                autoplay
+              />
             </div>
             <div className="max-w-4xl text-center mx-auto ">
               <h1
@@ -51,7 +60,7 @@ const Verified = () => {
               >
                 <span className="absolute bottom-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#ECEC0B] group-hover:h-full opacity-90"></span>
                 <span className="relative group-hover:text-black">
-                 Open Chopmoney
+                  Open Chopmoney
                 </span>
               </a>
             </div>
