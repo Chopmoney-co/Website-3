@@ -6,17 +6,17 @@ const Footer = () => {
   return (
     <div className="bg-black">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-[85rem] md:px-24 lg:px-8">
-        <div className="grid gap-10 row-gap-6 lg:grid-cols-2">
+        <div className="grid gap-10 justify-center lg:justify-start row-gap-6 lg:grid-cols-2">
           <div className="">
             <a
               href="/"
               aria-label="Go home"
               title="Company"
-              className="inline-flex items-center"
+              className="inline-flex w-full lg:w-36 justify-center lg:justify-start items-center"
             >
-              <img className="mx-auto w-[100px]" src={LogoIcon} alt="" />
+              <img className="w-[100px]" src={LogoIcon} alt="" />
             </a>
-            <div className="flex flex-row sm:items-center sm:gap-y-0 gap-x-4">
+            <div className="flex flex-col lg:flex-row sm:items-center text-center lg:text-left sm:gap-y-0 gap-x-4">
               <a
                 className="font-normal text-white hover:text-[#ECEC0B]"
                 href="https://onelink.to/gx8jhf"
@@ -30,7 +30,7 @@ const Footer = () => {
                 Blog
               </a>
             </div>
-            <div className="flex flex-row sm:gap-y-0 gap-x-4">
+            <div className="flex flex-col lg:flex-row text-center lg:text-left sm:gap-y-0 gap-x-4">
               <a
                 className="font-normal text-white hover:text-[#ECEC0B]"
                 href="/about-us"
@@ -56,10 +56,10 @@ const Footer = () => {
                 Contact Us
               </Link>
             </div>
-            <p className="mt-4  text-white">
+            <p className="mt-4 text-center lg:text-left  text-white">
               © 2021 Chopmoney. All rights reserved
             </p>
-            <div className="flex items-center mt-1 space-x-3">
+            <div className="flex justify-center lg:justify-start items-center mt-1 space-x-3">
               <a
                 href="/"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -100,17 +100,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="max-w-xs lg:ml-auto">
+          <div className="max-w-xs text-center lg:ml-auto">
             <p className="mt-4 text-lg text-white">Get the app</p>
             <div className="pt-4">
               <a href="https://apps.apple.com/us/app/chopmoney/id6444722445">
-                <img className="mb-2" src={AppStore} alt="" />
+                <img className="mb-2 mx-auto lg:mx-0" src={AppStore} alt="" />
               </a>
               <a
                 className="my-2"
                 href="https://play.google.com/store/apps/details?id=co.chopmoney.app&pli=1"
               >
-                <img src={PlayStore} alt="" />
+                <img className="mx-auto lg:mx-0" src={PlayStore} alt="" />
               </a>
             </div>
           </div>
