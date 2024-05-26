@@ -29,6 +29,7 @@ export { default as Cards8 } from "./images/Cards-8.svg";
 export { default as Cards9 } from "./images/Cards-9.svg";
 export { default as TransparentImg } from "./images/img_transparent.png";
 export { default as TransparentImg2 } from "./images/img_transparent2.png";
+export { default as NotFound } from "./images/404.json";
 
 // video
 export { default as ChopmoneyVideo } from "./videos/ChopmoneyVideo.mp4";

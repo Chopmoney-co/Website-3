@@ -10,6 +10,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import AOS from "aos";
 import AboutUs from "./pages/AboutUs";
 import Verified from "./pages/verification/Verified";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/verified/:userId/:token" element={<Verified />} />
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </HelmetProvider>
