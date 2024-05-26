@@ -9,7 +9,7 @@ import GoogleTagManager from "./GoogleTag";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import AOS from "aos";
 import AboutUs from "./pages/AboutUs";
-import Verified from "./pages/Verified";
+import Verified from "./pages/verification/Verified";
 
 const App = () => {
   useEffect(() => {
@@ -34,7 +34,7 @@ const App = () => {
         <Route path="/term-of-use" element={<TermsofUse />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/verified" element={<Verified />} />
+        <Route path="/verified/:userId/:token" element={<Verified />} />
       </Routes>
       <Footer />
     </HelmetProvider>
