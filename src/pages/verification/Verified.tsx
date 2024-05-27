@@ -2,20 +2,24 @@ import React, { useEffect } from "react";
 import Carousel from "../home/components/Carousel";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { LogoIcon, VerifiedGif } from "../../assets";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useEmailVerifyMutation } from "../../services/email-service";
 import Loader from "./components/Loader";
 
 const Verified = () => {
-  const { userId, token } = useParams();
+  const location = useLocation();
   const [emailVerify, { isLoading, isSuccess, isError }] =
     useEmailVerifyMutation();
 
   useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const userId = params.get("userId");
+    const token = params.get("token");
+
     if (userId && token) {
       emailVerify({ userId, token });
     }
-  }, [userId, token, emailVerify]);
+  }, [location.search, emailVerify]);
 
   if (isLoading) {
     return (
@@ -26,8 +30,15 @@ const Verified = () => {
   }
 
   if (isError) {
-    return <div>Verification failed. Please try again.</div>;
+    return (
+      <div className="bg-[#1F1F1F] h-[100vh] flex items-center">
+        <p className="text-center text-white text-4xl">
+          Verification failed. Please try again.
+        </p>
+      </div>
+    );
   }
+
   if (isSuccess) {
     return (
       <div>

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Footer from "./shared/Footer";
+import Footer from "./components/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsofUse from "./pages/TermsofUse";
 import ContactUs from "./pages/ContactUs";
@@ -11,6 +11,7 @@ import AOS from "aos";
 import AboutUs from "./pages/AboutUs";
 import Verified from "./pages/verification/Verified";
 import PageNotFound from "./pages/PageNotFound";
+import MainLayout from "./shared/MainLayout";
 
 const App = () => {
   useEffect(() => {
@@ -30,15 +31,17 @@ const App = () => {
         <link rel="canonical" href="http://chopmoney.co" />
       </Helmet>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/term-of-use" element={<TermsofUse />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/verified/:userId/:token" element={<Verified />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Navigate replace to="home" />} />
+          <Route path="home" element={<Home />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="term-of-use" element={<TermsofUse />} />
+          <Route path="contact-us" element={<ContactUs />} />
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="verified/:userId/:token" element={<Verified />} />
+        </Route>
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
-      <Footer />
     </HelmetProvider>
   );
 };
