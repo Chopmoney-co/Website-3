@@ -38,7 +38,7 @@ const App = () => {
           <Route path="term-of-use" element={<TermsofUse />} />
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="about-us" element={<AboutUs />} />
-          <Route path="verified/:userId/:token" element={<Verified />} />
+          <Route path="verified" element={<Verified />} />
         </Route>
         <Route path="/*" element={<PageNotFound />} />
       </Routes>

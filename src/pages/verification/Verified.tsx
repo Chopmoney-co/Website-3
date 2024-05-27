@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Carousel from "../home/components/Carousel";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { LogoIcon, VerifiedGif } from "../../assets";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useEmailVerifyMutation } from "../../services/email-service";
 import Loader from "./components/Loader";
 
@@ -31,7 +31,7 @@ const Verified = () => {
 
   if (isError) {
     return (
-      <div className="bg-[#1F1F1F] h-[100vh] flex items-center">
+      <div className="bg-[#1F1F1F] h-[100vh] flex justify-center items-center">
         <p className="text-center text-white text-4xl">
           Verification failed. Please try again.
         </p>
