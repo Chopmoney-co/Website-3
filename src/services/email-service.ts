@@ -4,7 +4,7 @@ import { BaseResponse } from "../models/response/base-response";
 export const emailService = createApi({
   reducerPath: "emailService",
   baseQuery: fetchBaseQuery({
-    baseUrl: `http://81.17.102.54:3000/api/v1`,
+    baseUrl: `https://81.17.102.54:3000/api/v1`,
   }),
   tagTypes: ["Email"],
   endpoints: (build) => ({
