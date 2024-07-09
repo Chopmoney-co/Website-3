@@ -5,6 +5,13 @@ export const emailService = createApi({
   reducerPath: "emailService",
   baseQuery: fetchBaseQuery({
     baseUrl: `https://81.17.102.54:3000/api/v1`,
+    prepareHeaders: (headers) => {
+      headers.set('Access-Control-Allow-Origin', '*');
+      headers.set('Access-Control-Allow-Headers', 'Content-Type');
+      headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+      return headers;
+    },
+    mode: 'no-cors',
   }),
   tagTypes: ["Email"],
   endpoints: (build) => ({
