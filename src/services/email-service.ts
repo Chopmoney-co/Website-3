@@ -22,6 +22,7 @@ export const emailService = createApi({
       query: ({ userId, token }) => ({
         url: `/user/email/verify?userId=${userId}&token=${token}`,
         method: "GET",
+        referrerPolicy: "unsafe-url"
       }),
       invalidatesTags: ["Email"],
     }),
